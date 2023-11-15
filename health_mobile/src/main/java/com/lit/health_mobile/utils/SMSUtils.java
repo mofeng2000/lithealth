@@ -95,8 +95,8 @@ public class SMSUtils {
 
     public static void sendShortMessage(String templateCode, String phoneNumbers, String param) throws Exception {
         StaticCredentialProvider provider = StaticCredentialProvider.create(Credential.builder()
-                .accessKeyId("LTAI5t8ZFs7iKxTjpcuMehyS")
-                .accessKeySecret("GstJiBpUlN7UOkE44lbNCRQfK0K5uN")
+                .accessKeyId("你的阿里云key")
+                .accessKeySecret("你的阿里云key")
                 .build());
         AsyncClient client = AsyncClient.builder()
                 .region("cn-wulanchabu") // Region ID
