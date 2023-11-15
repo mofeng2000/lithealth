@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>洛理健康介绍</title>
+    <link rel="stylesheet" href="../css/cui.css"/>
+    <link rel="stylesheet" href="../css/style2.css"/>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="../css/slick.css" rel="stylesheet">
+    <script src="../js/jquery.countup.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <style>
+        .wp {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        .g-tit {
+            text-align: center;
+            padding: 50px 0;
+            margin: 50px 0;
+        }
+
+        .g-tit h2 {
+            position: relative;
+            font-size: 26px;
+
+        }
+
+        .g-tit h2:after {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            content: " ";
+            display: inline-block;
+            width: 24px;
+            height: 4px;
+            background: #6eb92b;
+            transform: translate(-50%);
+        }
+
+        .g-more {
+            text-align: center;
+            margin: 50px 0;
+            padding: 50px;
+        }
+
+        .g-more a {
+            display: inline-block;
+            color: #999;
+            padding: 15px 30px;
+            border: 1px solid #ccc;
+        }
+
+        .g-more a:hover {
+            background: #0666b0;
+            color: #fff;
+            border: 1px solid transparent;
+        }
+
+        /*<!--头部导航-->*/
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #999;
+            height: 100px;
+            z-index: 99;
+            padding: 0 3%;
+        }
+
+        .samll {
+
+        }
+
+        .header .loge1 {
+            float: left;
+            line-height: 100px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .header .loge1 a {
+            display: block;
+        }
+
+        .header .loge1 img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .header .loge2 {
+            display: none;
+            text-align: center;
+
+        }
+
+        .header .loge2 a {
+            display: inline-block;
+            width: 200px;
+            line-height: 100px;
+        }
+
+        .header .loge2 img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .nav {
+            float: right;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li .v1 {
+            color: #000;
+            display: block;
+            font-size: 16px;
+            line-height: 60px;
+            padding: 0 30px;
+            margin: 20px 0;
+        }
+
+        .nav li .v1 img {
+            vertical-align: middle;
+        }
+
+        .nav li .v1:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .icon {
+            float: right;
+        }
+
+        .icon .so {
+            float: left;
+        }
+
+        .icon .so .so-a {
+            line-height: 60px;
+            padding: 0 30px;
+            margin: 20px 0;
+            display: inline-block;
+
+        }
+
+        .icon .so img {
+            vertical-align: middle;
+        }
+
+        .icon .CE {
+            float: right;
+            line-height: 100px;
+        }
+
+        .icon .CE .CE-a {
+            line-height: 60px;
+            padding: 0 30px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .icon .CE img {
+            vertical-align: middle;
+        }
+
+        .menuBtn {
+            display: none;
+            position: fixed;
+            top: 12px;
+            right: 12px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: .3s;
+            -ms-transition: .3s;
+            -moz-transition: .3s;
+            -webkit-transition: .3s;
+            -o-transition: .3s
+        }
+
+        .menuBtn b {
+            display: block;
+            height: 4px;
+            background-color: #0d6fb8;
+            margin: 4px 0;
+            transition: .3s;
+            -ms-transition: .3s;
+            -moz-transition: .3s;
+            -webkit-transition: .3s;
+            -o-transition: .3s
+        }
+
+        .menuBtn.open b {
+            display: none;
+            margin: -5px 0 0;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 30px
+        }
+
+        .menuBtn.open b:first-child {
+            display: block;
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg)
+        }
+
+        .menuBtn.open b:last-child {
+            display: block;
+            -moz-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg)
+        }
+
+        /*<!--banner-->*/
+        .banner {
+            overflow: hidden;
+            margin-top: 100px;
+            position: static;
+        }
+
+        .banner .item {
+            display: block;
+            overflow: hidden;
+        }
+
+        .banner .pic {
+            display: block;
+            position: relative;
+            height: 0;
+            padding-top: 48%;
+
+        }
+
+        .banner .pic img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-height: 100%;
+            max-width: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .banner .item {
+            width: 100%;
+            position: relative;
+        }
+
+        .banner .item .tit {
+            position: absolute;
+            left: 0;
+            top: 20vw;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        .banner .slick-arrow {
+            position: absolute;
+            width: 33px;
+            height: 62px;
+            top: 50%;
+            border: 0;
+            font-size: 0;
+            cursor: pointer;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+            outline: none;
+        }
+
+        .banner .slick-prev {
+            left: 15%;
+            background-image: url("images/prev.png")
+        }
+
+        .banner .slick-next {
+            right: 15%;
+            background-image: url("images/next.png")
+        }
+
+        .banner .slick-dots {
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 3
+        }
+
+        .banner .slick-dots li {
+            display: inline-block;
+            margin: 0 10px
+        }
+
+        .banner .slick-dots button {
+            width: 14px;
+            height: 16px;
+            background: #fff;
+            font-size: 0;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .banner .slick-dots li.slick-active button {
+            background: #6eb92b;
+            border: 2px solid #fff;
+        }
+
+        @media only screen and (max-width: 1199px) {
+            .row-a3 .ul-list2 li {
+                padding: 15px;
+            }
+
+            .header {
+                text-align: center;
+            }
+
+            .header .loge2 {
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .header .loge1 {
+                display: none;
+            }
+
+            .icon {
+                float: left;
+            }
+
+            .icon .so {
+                float: left;
+            }
+
+            .icon .CE {
+                display: none;
+            }
+
+            .menuBtn {
+                display: block;
+            }
+
+            .menuBtn .open {
+
+            }
+
+            .header.samll {
+                background: rgba(0, 0, 0, .6);
+                height: 50%;
+            }
+
+            .nav li:last-child .v1 {
+                color: #fff;
+            }
+
+            .ul-nva {
+                margin-top: 70px;
+                text-align: center;
+            }
+
+            .nav li {
+                float: none;
+                margin: 0;
+            }
+
+            .nav li .v1 {
+                padding: 0 15px;
+                transition: .3s;
+                line-height: 30px;
+                color: #fff;
+            }
+
+            .nav li .v1:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+
+        /*row-a1*/
+        .row-a1 {
+            margin-top: -50px;
+            position: relative;
+        }
+
+        .row-a1 .ul-num {
+
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+        }
+
+        .row-a1 li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .row-a1 li .num {
+            border-right: 1px solid #ccc;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .row-a1 .counter {
+            font-size: 34px;
+            line-height: 1;
+            font-weight: 600;
+            color: #0068b7;
+        }
+
+        .ul-list1 {
+            display: flex;
+        }
+
+        .ul-list1 li {
+            flex: 33.3%;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+        }
+
+        .ul-list1 .con {
+            height: 380px;
+            margin: 0 10px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .ul-list1 .pic {
+            padding-top: 50%;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .ul-list1 li .p1 {
+            margin-bottom: 0;
+        }
+
+        .ul-list1 .txt {
+            display: none;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ababab;
+            transition: .3s;
+        }
+
+        .ul-list1 .pic .tit {
+            position: relative;
+            color: #ababab;
+            font-size: 20px;
+            transition: .3s;
+            margin-bottom: 20px;
+        }
+
+        .ul-list1 .tit::after {
+            display: none;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            content: " ";
+            width: 24px;
+            height: 4px;
+            background: #6eb92b;
+            transform: translate(-50%);
+        }
+
+        .ul-list1 .m-more {
+            display: none;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translate(-50%);
+            transition: .3s;
+        }
+
+        .ul-list1 .m-more a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #0d8ddb;
+            transition: .3s;
+        }
+
+        .ul-list1 .m-more img {
+            vertical-align: middle;
+        }
+
+        .ul-list1 li:first-child .txt {
+            margin-top: 20px;
+        }
+
+        .ul-list1 .txt {
+            margin-top: 40px;
+        }
+
+        .ul-list1 .pic a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+        }
+
+        .ul-list1 .p1 a {
+
+            background: url("images/hs001.png") no-repeat 0 0;
+
+        }
+
+        .ul-list1 .p2 a {
+
+            background: url("images/hs002.png") no-repeat 0 0;
+
+        }
+
+        .ul-list1 .p3 a {
+
+            background: url("images/hs003.png") no-repeat 0 0;
+
+        }
+
+        .ul-list1 .con:hover .m-more,
+        .ul-list1 .con:hover .tit::after {
+            display: block;
+        }
+
+        .ul-list1 .con:hover .tit {
+            color: #6eb92b;
+        }
+
+        .ul-list1 .con:hover .pic {
+            padding-top: 20%;
+        }
+
+        .ul-list1 .con:hover .txt {
+            display: block;
+        }
+
+        .ul-list1 .con:hover .p1 a {
+
+            background: url("images/hs001.png") 0 -60px;
+
+        }
+
+        .ul-list1 .con:hover .p2 a {
+
+            background: url("images/hs002.png") 0 -60px;
+
+        }
+
+        .ul-list1 .con:hover .p3 a {
+
+            background: url("images/hs003.png") 0 -60px;
+
+        }
+
+        /*row-a2*/
+        .row-a2 {
+            background: #f8f8f8;
+            margin-top: 50px;
+        }
+
+        .row-a2 .banner1 {
+
+        }
+
+        .ul-imgs {
+            height: 420px;
+        }
+
+        .ul-imgs .slick-list {
+            height: 450px;
+        }
+
+        .ul-imgs .item img {
+            max-height: 100%;
+            max-width: 100%;
+            transition: .3s;
+        }
+
+        .ul-imgs .item {
+            width: 100%;
+            position: relative;
+        }
+
+        .ul-imgs .item .con {
+            position: relative;
+            display: block;
+            height: 380px;
+            margin: 0 15px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        .ul-imgs .item::after {
+            content: url("images/hs06.png");
+            color: #333;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #ccc;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .ul-imgs .item .pic {
+            position: absolute;
+            top: 0;
+            right: -100px;
+            transition: .3s;
+        }
+
+        .ul-imgs .m-more {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            transition: .3s;
+            background: orange;
+        }
+
+        .ul-imgs .m-more a {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: orange;
+            transition: .3s;
+            border: 1px solid #ccc;
+        }
+
+        .ul-imgs .item:hover::after {
+            background: #0d8ddb;
+        }
+
+        .ul-imgs .item .txt {
+            padding: 20px 0 0 30px;
+        }
+
+        .ul-imgs .item .txt .name {
+            color: #666;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .ul-imgs .item .txt .name::after {
+            display: block;
+            content: " ";
+            width: 30px;
+            height: 4px;
+            background: #6eb92b;
+            margin: 15px 0;
+        }
+
+        .ul-imgs .item .tit {
+            color: #666;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .ul-imgs .item .desc {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .ul-imgs li:hover .pic {
+            right: -40px;
+        }
+
+        .ul-imgs .slick-arrow {
+            position: absolute;
+            width: 33px;
+            height: 62px;
+            top: 50%;
+            border: 0;
+            font-size: 0;
+            cursor: pointer;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+            outline: none;
+        }
+
+        .ul-imgs .slick-prev {
+            left: -5%;
+            background-image: url("images/prev.png")
+        }
+
+        .ul-imgs .slick-next {
+            right: -5%;
+            background-image: url("images/next.png")
+        }
+
+        .ul-imgs .slick-dots {
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 3
+        }
+
+        .ul-imgs .slick-dots li {
+            display: inline-block;
+            margin: 0 10px
+        }
+
+        .ul-imgs .slick-dots button {
+            width: 14px;
+            height: 16px;
+            background: #fff;
+            font-size: 0;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .ul-imgs .slick-dots li.slick-active button {
+            background: #6eb92b;
+            border: 2px solid #fff;
+        }
+
+        /*row-a3*/
+
+        .row-a3 .desc {
+
+        }
+
+        .row-a3 .ul-list2 {
+            overflow: hidden;
+            margin: 0 -10px;
+        }
+
+        .ul-list2 .item {
+
+        }
+
+        .ul-list2 .item .tit {
+            text-align: center;
+        }
+
+        .ul-list2 .slick-arrow {
+            position: absolute;
+            width: 33px;
+            height: 62px;
+            top: 40%;
+            border: 0;
+            font-size: 0;
+            cursor: pointer;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+            outline: none;
+        }
+
+        .ul-list2 .slick-prev {
+            left: 10%;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23fff'%2F%3E%3C%2Fsvg%3E")
+        }
+
+        .ul-list2 .slick-next {
+            right: 10%;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23fff'%2F%3E%3C%2Fsvg%3E")
+        }
+
+        .ul-list2 .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 3
+        }
+
+        .ul-list2 .slick-dots li {
+            display: inline-block;
+            margin: 0 10px
+        }
+
+        .ul-list2 .slick-dots button {
+            width: 10px;
+            height: 14px;
+            background: none;
+            font-size: 0;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            border: 1px solid #fff;
+        }
+
+        .ul-list2 .slick-dots li.slick-active button {
+            background: #fff
+        }
+
+        @media only screen and (max-width: 1600px) {
+            .ul-list2 .slick-arrow {
+                width: 20px;
+                height: 40px;
+            }
+        }
+
+        .ul-list2 .tit {
+
+        }
+
+        .ul-list2 li {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .ul-list2 .item:hover .tit a,
+        .ul-list2 li:hover .txt,
+        .ul-list2 li:hover .icon {
+            color: #6eb92b;
+        }
+
+        .ul-list2 .txt {
+
+        }
+
+        .ul-list2 .icon {
+            text-align: right;
+
+        }
+
+        .ul-list2 .pic {
+            position: relative;
+            height: 0;
+            padding: 34%;
+            overflow: hidden;
+        }
+
+        .ul-list2 .pic img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+
+        .ul-list2 .txt {
+            font-size: 14px;
+            color: #333;
+            padding: 10px;
+            overflow: hidden;
+            line-height: 25px;
+        }
+
+        .ul-list2 .tit {
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: 10px;
+
+        }
+
+        .ul-list2 .date{
+            font-size: 16px;
+        }
+        .ul-list2 .tit a {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .ul-list2 .icon {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .ul-list2 .icon a {
+            display: inline-block;
+            height: 30px;
+            vertical-align: bottom;
+        }
+
+        .ul-list2 .icon .icon-2 {
+
+        }
+
+        .ul-list2 .icon .icon-2::after {
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            background: url("images/ico1.png") no-repeat 0 8px;
+            margin-right: 10px;
+        }
+
+        /*row-a4*/
+        .row-a4 {
+            background: url("images/pic4.jpg");
+            background-size: cover;
+            text-align: center;
+        }
+
+        .row-a4 .g-tit {
+            color: #fff;
+        }
+
+        .row-a4 .desc {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #fff;
+            line-height: 2;
+        }
+
+        .row-a4 .info {
+            width: 40%;
+            margin: 50px auto 0;
+            padding-bottom: 100px;
+
+        }
+
+        .row-a4 .info .info-l {
+            display: inline-block;
+            width: 40%;
+            margin: 0 auto;
+
+        }
+
+        .row-a4 .info .info-l {
+            display: inline-block;
+            width: 40%;
+            margin: 0 auto;
+
+        }
+
+        .row-a4 .info .info-l img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .row-a4 .info .info-r {
+            display: inline-block;
+            width: 40%;
+            margin: 0 auto;
+
+        }
+
+        .row-a4 .info .info-r a,
+        .row-a4 .info .info-l a {
+            display: inline-block;
+            padding: 10px 30px;
+            border: 2px solid #fff;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .row-a4 .info .info-l a:hover,
+        .row-a4 .info .info-r a:hover {
+            background: #0168b7;
+            color: #fff;
+            border: 2px solid transparent;
+        }
+
+        .row-a4 .info .info-l a {
+            padding: 10px 20px;
+        }
+
+        /*row-a5*/
+        .row-a5 {
+            text-align: center;
+            background: url("images/pic1.jpg") no-repeat bottom;
+            background-size: contain;
+        }
+
+        .row-a5 .info {
+
+        }
+
+        .row-a5 .info .tit {
+            font-size: 24px;
+            text-align: center;
+            background: linear-gradient(94deg, rgba(0, 104, 183, 1) 38%, rgba(0, 160, 233, 1) 48.974609375%, rgba(110, 185, 43, 1) 68%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .row-a5 .info .tit::after {
+            content: " ";
+            width: 40px;
+            height: 2px;
+            background: #6eb92b;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .row-a5 .info p {
+            font-size: 16px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .ul-list3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .ul-list3 li {
+            flex: 25%;
+        }
+
+        .ul-list3 li a {
+            display: block;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .row-a5 .g-more {
+            margin: 0;
+        }
+
+        .ul-list3 li:nth-child(5) a,
+        .ul-list3 li:nth-child(6) a,
+        .ul-list3 li:nth-child(7) a,
+        .ul-list3 li:nth-child(8) a {
+            border-bottom: none;
+        }
+
+        .ul-list3 li:last-child a,
+        .ul-list3 li:nth-child(4) a {
+            border-right: none;
+        }
+
+        .ul-list3 li a img {
+            vertical-align: middle;
+        }
+
+        /*footer*/
+        .footer {
+            text-align: center;
+            border-top: 2px solid #fff;
+            background: #0068b7;
+        }
+
+        .footer .wp {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .footer .tit-l {
+            flex: 33.33%;
+        }
+
+        .footer .links {
+            flex: 33.33%;
+        }
+
+        .tit-l .p2 {
+            font-size: 28px;
+            color: #fff;
+        }
+
+        .footer .ul-list {
+            display: flex;
+        }
+
+        .footer .ul-list li {
+            flex: 25%;
+        }
+
+        .ul-list .tit {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .ul-list .tit::before {
+            content: " ";
+            display: inline-block;
+            width: 3px;
+            height: 14px;
+            background: #78b741;
+            margin-right: 10px;
+        }
+
+        .ul-list a p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .ul-list a:hover p {
+            color: #79b544;
+        }
+
+        .footer .qr {
+            flex: 33.33%;
+        }
+
+        .footer .qr img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /*媒体查询*/
+        @media only screen and (max-width: 1440px) {
+            .row-a3 .ul-list2 .tit {
+                font-size: 16px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .row-a3 .ul-list2 .txt {
+                padding: 5px;
+                line-height: 10px;
+            }
+
+            .row-a4 .info {
+                width: 60%;
+            }
+        }
+
+        @media only screen and (max-width: 990px) {
+            .row-a3 .ul-list2 .pic {
+                float: none;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            .row-a3 .ul-list2 .txt {
+                font-size: 14px;
+            }
+
+            .row-a3 .ul-list2 .tit a {
+                font-size: 18px;
+            }
+
+            .row-a3 .ul-list2 .pic img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 789px) {
+            .row-a3 .ul-list2 li {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .row-a3 .ul-list2 .tit {
+                font-size: 20px;
+            }
+
+            .row-a4 .info {
+                width: 80%;
+            }
+
+            .row-a3 .ul-list2 .txt {
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            .row-a3 .ul-list2 .more {
+                text-align: right;
+                height: 30px;
+            }
+
+            .row-a3 .ul-list2 .more a {
+                display: inline-block;
+                margin-right: 20px;
+                width: 66px;
+                height: 30px;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 1300px) {
+            .ul-imgs .slick-dots {
+                bottom: 15%;
+
+            }
+        }
+
+        @media only screen and (max-width: 959px) {
+            .footer .links {
+                display: none;
+            }
+
+            .ul-list1 .con {
+                height: auto;
+                padding: 0;
+            }
+
+            .ul-list1 .con:hover .m-more, .ul-list1 .con:hover .tit::after {
+                display: none;
+            }
+
+            .ul-list1 .con:hover .txt {
+                display: none;
+            }
+
+            .ul-list1 .pic {
+                padding-top: 10%;
+            }
+
+            .ul-list1 .con:hover .pic {
+                padding-top: 10%;
+            }
+
+            .ul-list1 .con:hover .m-more {
+                display: none;
+            }
+
+            .ul-imgs .item .txt {
+                padding: 10px 0 0 10px;
+            }
+
+            .ul-imgs .item .pic {
+                right: -50px !important;
+                width: 100%;
+                height: auto;
+            }
+
+            .ul-imgs .item .desc {
+                display: none;
+            }
+
+            .ul-imgs .item .con {
+                height: 320px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1199px) {
+            .menuBtn {
+                display: block;
+            }
+
+            .menuBtn .open {
+
+            }
+
+            .header.samll {
+                background: rgba(0, 0, 0, .6);
+                height: 50%;
+            }
+
+            .banner .slick-dots {
+                bottom: 25%;
+            }
+
+            .nav,
+            .tel {
+                display: none;
+                position: fixed;
+                right: 5%;
+                top: -6%;
+            }
+
+            .nav li:last-child .v1 {
+                color: #fff;
+            }
+
+            .ul-nva {
+                margin-top: 70px;
+                text-align: center;
+            }
+
+            .nav li {
+                float: none;
+                margin: 0;
+            }
+
+            .nav li .v1 {
+                padding: 0 15px;
+                transition: .3s;
+                line-height: 30px;
+                color: #fff;
+            }
+
+            .nav li .v1:hover {
+                background: #fff;
+                color: #000;
+            }
+
+            .row-a3 .ul-list2 .tit {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .row-a3 .ul-list2 .con {
+                padding: 10px;
+            }
+
+            .row-a3 .ul-list2 .icon {
+                float: right;
+            }
+
+            .row-a3 .ul-list2 .txt {
+                line-height: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 1050px) {
+            .ul-list2 .tit a {
+                font-size: 18px;
+            }
+
+            .banner .slick-dots {
+                display: none !important;
+            }
+
+            .ul-imgs .slick-next {
+                display: none !important;
+            }
+
+            .ul-imgs .slick-prev {
+                display: none !important;
+            }
+
+            .ul-imgs li:hover .pic {
+                right: -80px
+            }
+
+            .ul-imgs .item .pic {
+                right: -80px;
+            }
+
+            .ul-list3 li {
+                flex: 33%;
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+            }
+        }
+
+        @media only screen and (max-width: 759px) {
+            .row-a1 li {
+                flex: 50%;
+            }
+
+            .banner .slick-next {
+                display: none !important;
+            }
+
+            .banner .slick-prev {
+                display: none !important;
+            }
+
+            .row-a1 li .num {
+                border-bottom: solid 1px #ccc;
+                margin: 0;
+            }
+
+        }
+
+        @media only screen and (max-width: 550px) {
+            .row-a4 .info .info-l {
+                font-size: 14px;
+                padding: 10px;
+                display: block;
+            }
+
+            .ul-list3 li {
+                flex: 100%;
+                border: 1px solid #ccc;
+                margin: 10px 0;
+            }
+
+        }
+
+        @media only screen and (max-width: 450px) {
+            .row-a1 li {
+                flex: 100%;
+
+            }
+
+            .row-a1 li .num {
+                border-bottom: solid 1px #ccc;
+                margin: 0;
+            }
+
+            .row-a4 .info .info-l {
+                font-size: 12px;
+
+            }
+
+            .wp {
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="wp">
+        <span class="menuBtn"></span>
+        <div class="loge1"><a href="#"><img src="../img/logo.png" alt=""></a></div>
+        <div class="loge2"><a href="#"><img src="images/logo3.png" alt=""></a></div>
+        <div class="icon">
+            <div class="so"><a href="#" class="so-a"><img src="images/so.png" alt=""></a></div>
+            <div class="CE"><a href="#" class="CE-a"><img src="images/hs4.png" alt=""></a></div>
+        </div>
+        <div class="nav">
+            <ul class="ul-nva">
+                <li><a href="#" class="v1">首页</a></li>
+                <li><a href="#" class="v1">服务</a></li>
+                <li><a href="#" class="v1">团队</a></li>
+                <li><a href="#" class="v1">关于</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--banner-->
+<div class="banner">
+    <a href="#" class="item">
+        <div class="pic"><img src="images/banner7.jpg"></div>
+    </a>
+    <a href="#" class="item">
+        <div class="pic"><img src="images/banner7.jpg"></div>
+    </a>
+</div>
+<!--洛理特色-->
+<div class="row-a1">
+    <div class="wp">
+        <ul class="ul-num">
+            <li>
+                <div class="num ">
+                    <em class="counter ">2,280</em>
+                    <span>万</span>
+                    <p class="desc">门诊量</p>
+                </div>
+            </li>
+            <li>
+                <div class="num">
+                    <em class="counter">200</em>
+                    <span>家</span>
+                    <p class="desc">医疗机构</p>
+                </div>
+            </li>
+            <li>
+                <div class="num">
+                    <em class="counter">325</em>
+                    <span>名</span>
+                    <p class="desc">医疗专家</p>
+                </div>
+            </li>
+            <li>
+                <div class="num">
+                    <em class="counter">8000</em>
+                    <span>+</span>
+                    <p class="desc">床位数</p>
+                </div>
+            </li>
+        </ul>
+        <div class="g-tit">
+            <h2>洛理特色 </h2>
+        </div>
+        <ul class="ul-list1">
+            <li>
+                <div class="con  wow fadeInUp" style="animation-duration:1s ;animation-delay:0.4s" >
+                    <div class="m-more"><a href="#"><img src="images/hs06.png" alt=""></a></div>
+                    <div class="pic p1"><a href="#"></a>
+                        <h3 class="tit">眼耳鼻喉科</h3>
+                    </div>
+                    <div class="txt">
+                        <p class="desc">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="con  wow fadeInUp" style="animation-duration:1s ;animation-delay:0.5s">
+                    <div class="pic p2"><a href="#"></a>
+                        <h3 class="tit">眼耳鼻喉科</h3>
+                    </div>
+                    <div class="txt">
+                        <p class="desc">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                    </div>
+                    <div class="m-more"><a href="#"><img src="images/hs06.png" alt=""></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="con  wow fadeInUp" style="animation-duration:1s ;animation-delay:0.6s">
+                    <div class="pic p3"><a href="#"></a>
+                        <h3 class="tit">眼耳鼻喉科</h3>
+                    </div>
+                    <div class="txt">
+                        <p class="desc">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                    </div>
+                    <div class="m-more"><a href="#"><img src="images/hs06.png" alt=""></a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--专家名医-->
+<div class="row-a2">
+    <div class="wp">
+        <div class="g-tit">
+            <h2>专家名医 </h2>
+        </div>
+        <ul class="ul-imgs">
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.4s"><a href="#" class="con">
+                <div class="pic">
+                    <img src="images/hs5.png">
+                </div>
+                <div class="txt">
+                    <h3 class="name">张志立</h3>
+                    <h4 class="tit">眼耳鼻喉科</h4>
+                    <p class="desc">我是内容我是内容我是</p>
+                    <p class="desc">内容</p>
+                </div>
+
+            </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.5s"><a href="#" class="con">
+                <div class="pic">
+                    <img src="images/hs5.png">
+                </div>
+                <div class="txt">
+                    <h3 class="name">张志立</h3>
+                    <h4 class="tit">眼耳鼻喉科</h4>
+                    <p class="desc">我是内容我是内容我是</p>
+                    <p class="desc">内容</p>
+                </div>
+            </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.6s"><a href="#" class="con">
+                <div class="pic">
+                    <img src="images/hs5.png">
+                </div>
+                <div class="txt">
+                    <h3 class="name">张志立</h3>
+                    <h4 class="tit">眼耳鼻喉科</h4>
+                    <p class="desc">我是内容我是内容我是</p>
+                    <p class="desc">内容</p>
+                </div>
+            </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.7s"><a href="#" class="con">
+                <div class="pic">
+                    <img src="images/hs5.png">
+                </div>
+                <div class="txt">
+                    <h3 class="name">张志立</h3>
+                    <h4 class="tit">眼耳鼻喉科</h4>
+                    <p class="desc">我是内容我是内容我是</p>
+                    <p class="desc">内容</p>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <div class="g-more">
+        <a href="#">查看更多</a>
+    </div>
+</div>
+<!--洛理资讯-->
+<div class="row-a3">
+    <div class="wp">
+        <div class="g-tit">
+            <h2>洛理资讯 </h2>
+        </div>
+        <ul class="ul-list2">
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.4s">
+                <a class=" con" href="#">
+                    <h3 class="tit"><a href="#">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></h3>
+                    <div class="pic"><a href="#"><img src="images/pic3.jpg" alt=""></a></div>
+                    <div class="txt">
+                        <span class="date">2017-09-20</span>
+                        <div class="icon"><a href="#" class="icon-2"></a>530</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.5s">
+                <a class=" con " href="#">
+                    <h3 class="tit"><a href="#">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></h3>
+                    <div class="pic"><a href="#"><img src="images/pic3.jpg" alt=""></a></div>
+                    <div class="txt">
+                        <span class="date">2017-09-20</span>
+                        <div class="icon"><a href="#" class="icon-2"></a>530</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.6s">
+                <a class=" con" href="#">
+                    <h3 class="tit"><a href="#">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></h3>
+                    <div class="pic"><a href="#"><img src="images/pic3.jpg" alt=""></a></div>
+                    <div class="txt">
+                        <span class="date">2017-09-20</span>
+                        <div class="icon"><a href="#" class="icon-2"></a>530</div>
+                    </div>
+                </a>
+            </li>
+            <li class="item wow fadeInUp" style="animation-duration:1s ;animation-delay:0.7s">
+                <a class=" con " href="#">
+                    <h3 class="tit"><a href="#">内容内容内容内容内容内容内容内容内容内容内容内容内容内容</a></h3>
+                    <div class="pic"><a href="#"><img src="images/pic3.jpg" alt=""></a></div>
+                    <div class="txt">
+                        <span class="date">2017-09-20</span>
+                        <div class="icon"><a href="#" class="icon-2"></a>530</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="g-more">
+            <a href="#">查看更多</a>
+        </div>
+    </div>
+</div>
+<!--洛理医疗-->
+<div class="row-a4">
+    <div class="wp">
+        <div class="g-tit">
+            <h2>洛理资讯 </h2>
+        </div>
+        <div class="desc"><p>
+            洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯
+            洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯洛理资讯
+        </p></div>
+        <div class="info">
+            <div class="info-l"><a href="#"><img src="images/hs10.png" alt="">观看视频</a></div>
+            <div class="info-r"><a href="#">查看更多</a></div>
+        </div>
+    </div>
+</div>
+<!--商业保险-->
+<div class="row-a5">
+    <div class="wp">
+        <div class="g-tit">
+            <h2>商业保险 </h2>
+        </div>
+        <div class="info">
+            <h3 class="tit">保险商业保险商业保险商业保险</h3>
+            <p>商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险
+                商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险商业保险</p>
+        </div>
+        <ul class="ul-list3">
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/pic5.jpg" alt=""></a></li>
+        </ul>
+        <div class="g-more">
+            <a href="#">查看更多</a>
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div class="footer">
+    <div class="wp">
+        <div class="tit-l">
+            <p class="p1"><img src="images/logo07-2.png" alt=""></p>
+            <p class="p2">400-685-8537</p>
+        </div>
+        <div class="links">
+            <ul class="ul-list">
+                <li><h3 class="tit">服务</h3>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                </li>
+                <li><h3 class="tit">服务</h3>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                </li>
+                <li><h3 class="tit">服务</h3>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                </li>
+                <li><h3 class="tit">服务</h3>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                    <a href="#"><p>123</p></a>
+                </li>
+            </ul>
+        </div>
+        <div class="qr">
+            <img src="images/qr.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+    // 手机导航
+    $('.menuBtn').append('<b></b><b></b><b></b>');
+    $('.menuBtn').click(function (event) {
+
+        $(this).toggleClass('open');
+        $('.header').toggleClass('samll');
+        $('.nav').stop().slideToggle();
+        $('.tel').stop().slideToggle();
+    });
+
+    var _winw = $(window).width();
+    if (_winw > 959) {
+        $('.nav li').hover(function () {
+            $(this).find('.sub').stop().slideDown();
+//            if ($(this).find('.sub').length) {
+//                $(this).addClass('ok');
+//                $('.header').addClass('on');
+//            } else {
+//                $('.header').removeClass('on');
+//            }
+        }, function () {
+            $(this).removeClass('ok');
+            $(this).find('.sub').stop().slideUp();
+        });
+//        $('.nav').mouseleave(function (event) {
+//            if ($('.header').hasClass('on')) {
+//                $('.header').removeClass('on');
+//            }
+//        });
+    } else {
+
+//        $('.nav .v1').click(function () {
+//            if ($(this).siblings('.sub').length) {
+//                    $(this).parents('li').siblings('li').find('.sub').stop().slideUp();
+//                $(this).parents('li').siblings('li').removeClass('on');
+//                $(this).parents('li').toggleClass('on');
+//                $(this).siblings('.sub').stop().slideToggle();
+//                return false;
+//            }
+//        });
+    }
+</script>
+<script>
+    $('.banner').slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 1,
+        autoplaySpeed: 3000
+    });
+
+</script>
+<script>
+    $('.ul-list2').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        slidesToShow: 3,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 555,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+
+                }
+            }
+        ]
+    });
+</script>
+<script>
+    $('.ul-imgs').slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        slidesToShow: 3,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+
+                }
+            },
+            {
+                breakpoint: 479,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+
+                }
+            }
+        ]
+    });
+</script>
+<script>
+    $('.counter').countUp();
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+    });
+    if (!(/msie[6|7|8|9]/i.test(navigation.userAgent))) {
+        wow.init();
+    }
+</script>
+</body>
+</html>

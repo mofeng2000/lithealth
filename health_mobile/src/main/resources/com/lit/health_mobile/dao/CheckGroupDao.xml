@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lit.health_mobile.dao.CheckGroupDao">
+    <resultMap type="com.lit.health_mobile.pojo.CheckGroup" id="baseResultMap">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="helpCode" property="helpCode"/>
+        <result column="sex" property="sex"/>
+        <result column="remark" property="remark"/>
+        <result column="attention" property="attention"/>
+    </resultMap>
+    <resultMap type="com.lit.health_mobile.pojo.CheckGroup"
+               id="findByIdResultMap"
+               extends="baseResultMap">
+        <collection property="checkItems"
+                    javaType="ArrayList"
+                    ofType="com.lit.health_mobile.pojo.CheckItem"
+                    column="id"
+                    select="com.lit.health_mobile.dao.CheckItemDao.findCheckItemById">
+        </collection>
+    </resultMap>
+    <!--根据套餐id查询关联的检查组详情-->
+    <select id="findCheckGroupById" parameterType="int" resultMap="findByIdResultMap">
+        select *
+        from t_check_group
+        where id in (select checkgroup_id from t_setmeal_checkgroup where setmeal_id = #{id})
+    </select>
+</mapper>

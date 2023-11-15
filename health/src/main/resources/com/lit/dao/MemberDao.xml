@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lit.dao.MemberDao" >
+    <select id="findAll" resultType="com.lit.pojo.Member">
+        select * from t_member
+    </select>
+
+    <!--根据条件查询-->
+    <select id="selectByCondition" parameterType="string" resultType="com.lit.pojo.Member">
+        select * from t_member
+        <if test="value != null and value.length > 0">
+            where file_number = #{value} or phone_number = #{value} or name = #{value}
+        </if>
+    </select>
+
+    <!--新增会员-->
+    <insert id="add" parameterType="com.lit.pojo.Member">
+        <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into t_member(file_number,name,sex,id_card,phone_number,reg_time,password,email,birthday,remark)
+        values (#{fileNumber},#{name},#{sex},#{idCard},#{phoneNumber},#{regTime},#{password},#{email},#{birthday},#{remark})
+    </insert>
+
+    <!--删除会员-->
+    <delete id="deleteById" parameterType="int">
+        delete from t_member where id = #{id}
+    </delete>
+
+    <!--根据id查询会员-->
+    <select id="findById" parameterType="int" resultType="com.lit.pojo.Member">
+        select * from t_member where id = #{id}
+    </select>
+
+    <!--根据id查询会员-->
+    <select id="findByTelephone" parameterType="string" resultType="com.lit.pojo.Member">
+        select * from t_member where phone_number = #{phoneNumber}
+    </select>
+
+    <!--编辑会员-->
+    <update id="edit" parameterType="com.lit.pojo.Member">
+        update t_member
+        <set>
+            <if test="file_number != null">
+                file_number = #{fileNumber},
+            </if>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="id_card != null">
+                id_card = #{idCard},
+            </if>
+            <if test="phone_number != null">
+                phone_number = #{phoneNumber},
+            </if>
+            <if test="reg_time != null">
+                reg_time = #{regTime},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="email != null">
+                email = #{email},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--根据日期统计会员数，统计指定日期之前的会员数-->
+    <select id="findMemberCountBeforeDate" parameterType="string" resultType="int">
+        select count(id) from t_member where reg_time &lt;= #{value}
+    </select>
+
+    <!--根据日期统计会员数-->
+    <select id="findMemberCountByDate" parameterType="string" resultType="int">
+        select count(id) from t_member where reg_time = #{value}
+    </select>
+
+    <!--根据日期统计会员数，统计指定日期之后的会员数-->
+    <select id="findMemberCountAfterDate" parameterType="string" resultType="int">
+        select count(id) from t_member where reg_time &gt;= #{value}
+    </select>
+
+    <!--总会员数-->
+    <select id="findMemberTotalCount" resultType="int">
+        select count(id) from t_member
+    </select>
+</mapper>

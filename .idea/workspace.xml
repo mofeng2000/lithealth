@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05f62b23-b48e-45d0-8cf7-28b7dada37cd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\apache-maven-3.8.4\mvn_resp" />
+        <option name="mavenHome" value="D:\maven\apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
+  </component>
+  <component name="ProjectId" id="2LOlS9I5wRaVXMM1lKXoNoy9D8B" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/health_mobile/src/main/resources/static/pages" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15234375" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="show.run.dashboard.notification" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\health_springboot\health_mobile\src\main\resources\static\pages" />
+      <recent name="D:\health_springboot\health\src\main\resources\static\pages" />
+      <recent name="D:\health_springboot\health\src\main\resources\static\js" />
+      <recent name="D:\health_springboot\health\src\main\resources\static" />
+      <recent name="D:\health_springboot\health\src\main\resources\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\health_springboot\health\src\main\resources\static\pages" />
+      <recent name="D:\health_springboot\health\src\main\resources\static" />
+      <recent name="D:\health_springboot\health\src\main\resources\static\WEN-INF" />
+      <recent name="D:\health_springboot\health\src\main\resources\com\lit" />
+      <recent name="D:\health_springboot\health\src\main\resources\static\template" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lit" />
+      <recent name="com.lit.health_mobile" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lit.dao" />
+      <recent name="com.lit.controller" />
+      <recent name="com.lit.service.impl" />
+      <recent name="com.lit.service" />
+      <recent name="com.lit.health_mobile.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HealthApplication">
+    <configuration name="HealthMobileApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="health_mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lit.health_mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lit.health_mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.lit.health_mobile.HealthMobileApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthMobileApplicationTests.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="health_mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lit.health_mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lit.health_mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.lit.health_mobile.HealthMobileApplicationTests" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthMobileApplicationTests.set" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="health_mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lit.health_mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lit.health_mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.lit.health_mobile.HealthMobileApplicationTests" />
+      <option name="METHOD_NAME" value="set" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POITest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="health" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lit.health.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lit.health" />
+      <option name="MAIN_CLASS_NAME" value="com.lit.health.POITest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="health" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lit.HealthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthMobileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="health_mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lit.health_mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lit.health_mobile.HealthMobileApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.HealthMobileApplication" />
+        <item itemvalue="JUnit.HealthMobileApplicationTests.get" />
+        <item itemvalue="JUnit.HealthMobileApplicationTests" />
+        <item itemvalue="JUnit.HealthMobileApplicationTests.set" />
+        <item itemvalue="JUnit.POITest.test3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\89508\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05f62b23-b48e-45d0-8cf7-28b7dada37cd" name="Default Changelist" comment="" />
+      <created>1675750010084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675750010084</updated>
+      <workItem from="1675750011471" duration="1386000" />
+      <workItem from="1676767670450" duration="5579000" />
+      <workItem from="1676788278816" duration="1895000" />
+      <workItem from="1676853502424" duration="3853000" />
+      <workItem from="1676859550332" duration="19160000" />
+      <workItem from="1677028561001" duration="692000" />
+      <workItem from="1677029287644" duration="151000" />
+      <workItem from="1677029549536" duration="121000" />
+      <workItem from="1677139668029" duration="1304000" />
+      <workItem from="1677227881168" duration="420000" />
+      <workItem from="1677475589343" duration="143000" />
+      <workItem from="1678168843135" duration="398000" />
+      <workItem from="1678888361038" duration="176000" />
+      <workItem from="1679817838899" duration="123000" />
+      <workItem from="1680000738527" duration="435000" />
+      <workItem from="1680336265386" duration="192000" />
+      <workItem from="1680954339062" duration="621000" />
+      <workItem from="1680998789969" duration="1495000" />
+      <workItem from="1681006217935" duration="2871000" />
+      <workItem from="1681088372381" duration="1819000" />
+      <workItem from="1681090227976" duration="170000" />
+      <workItem from="1681090447992" duration="10911000" />
+      <workItem from="1681177602196" duration="6724000" />
+      <workItem from="1681259145269" duration="20333000" />
+      <workItem from="1681347395773" duration="8181000" />
+      <workItem from="1681435515391" duration="728000" />
+      <workItem from="1681437071617" duration="9337000" />
+      <workItem from="1681522832530" duration="2937000" />
+      <workItem from="1681611679119" duration="3119000" />
+      <workItem from="1681778089208" duration="12790000" />
+      <workItem from="1681805687763" duration="5083000" />
+      <workItem from="1681866875578" duration="1783000" />
+      <workItem from="1681951477022" duration="9124000" />
+      <workItem from="1681979478174" duration="3441000" />
+      <workItem from="1682055747471" duration="11708000" />
+      <workItem from="1682126627536" duration="9636000" />
+      <workItem from="1682211635033" duration="14360000" />
+      <workItem from="1682300216252" duration="11120000" />
+      <workItem from="1682329015874" duration="8954000" />
+      <workItem from="1682398037364" duration="6078000" />
+      <workItem from="1682414007156" duration="773000" />
+      <workItem from="1682488124695" duration="5649000" />
+      <workItem from="1682575332736" duration="4473000" />
+      <workItem from="1682661201574" duration="5730000" />
+      <workItem from="1682732169661" duration="2746000" />
+      <workItem from="1682820607374" duration="3189000" />
+      <workItem from="1682995893018" duration="2646000" />
+      <workItem from="1683079797678" duration="1851000" />
+      <workItem from="1683164120403" duration="7822000" />
+      <workItem from="1683251925683" duration="14620000" />
+      <workItem from="1683337474307" duration="10051000" />
+      <workItem from="1683425403481" duration="19186000" />
+      <workItem from="1683465643383" duration="2840000" />
+      <workItem from="1683512345601" duration="6586000" />
+      <workItem from="1683599093674" duration="2662000" />
+      <workItem from="1683602142442" duration="11610000" />
+      <workItem from="1683642697034" duration="919000" />
+      <workItem from="1683727406020" duration="2349000" />
+      <workItem from="1683874137137" duration="1856000" />
+      <workItem from="1683876142048" duration="2890000" />
+      <workItem from="1683900126336" duration="33000" />
+      <workItem from="1684129299665" duration="2872000" />
+      <workItem from="1684144756171" duration="975000" />
+      <workItem from="1684148177666" duration="2496000" />
+      <workItem from="1684296010572" duration="2533000" />
+      <workItem from="1684388937615" duration="2765000" />
+      <workItem from="1684406162375" duration="2183000" />
+      <workItem from="1684474463052" duration="797000" />
+      <workItem from="1684550490144" duration="15000" />
+      <workItem from="1684659399035" duration="3249000" />
+      <workItem from="1684815383604" duration="3908000" />
+      <workItem from="1685095203899" duration="710000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/health/src/main/java/com/lit/dao/SetMealDao.java</url>
+          <line>18</line>
+          <properties class="com.lit.dao.SetMealDao" method="findSetmealCount">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

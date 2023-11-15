@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lit.health_mobile.dao.OrderSettingDao">
+    <insert id="add" parameterType="com.lit.health_mobile.pojo.OrderSetting">
+        insert into t_ordersetting (order_date, number, reservations)
+        values (#{orderDate}, #{number}, #{reservations})
+    </insert>
+    <!--根据日期更新预约人数-->
+    <update id="editNumberByOrderDate" parameterType="com.lit.health_mobile.pojo.OrderSetting">
+        update t_ordersetting
+        set number = #{number}
+        where order_date = #{orderDate}
+    </update>
+    <!--更新已预约人数-->
+    <update id="editReservationsByOrderDate" parameterType="com.lit.health_mobile.pojo.OrderSetting">
+        update t_ordersetting
+        set reservations = #{reservations}
+        where order_date = #{orderDate}
+    </update>
+    <!--根据预约日期查询-->
+    <select id="findCountByOrderDate" parameterType="java.util.Date" resultType="long">
+        select count(*)
+        from t_ordersetting
+        where order_date = #{orderDate}
+    </select>
+    <select id="findByOrderDate" parameterType="java.util.Date" resultType="com.lit.health_mobile.pojo.OrderSetting">
+        select * from t_ordersetting where order_date = #{orderDate}
+    </select>
+    <!--根据月份查询预约设置信息-->
+    <select id="getOrderSettingByMonth"
+            parameterType="hashmap"
+            resultType="com.lit.health_mobile.pojo.OrderSetting">
+        select *
+        from t_ordersetting
+        where order_date between #{dateBegin} and #{dateEnd}
+    </select>
+    <!--    &lt;!&ndash;根据月份查询预约设置信息&ndash;&gt;-->
+    <!--    <select id="findByOrderDate"-->
+    <!--            parameterType="hashmap"-->
+    <!--            resultType="com.lit.health_mobile.pojo.OrderSetting">-->
+    <!--        select * from t_ordersetting where order_date between #{dateBegin} and #{dateEnd}-->
+    <!--    </select>-->
+    <!--根据日期查询预约设置信息-->
+    <!--    <select id="findByOrderDate" parameterType="date" resultType="com.lit.health_mobile.pojo.OrderSetting">-->
+    <!--        select * from t_ordersetting where order_date = #{orderDate}-->
+    <!--    </select>-->
+</mapper>

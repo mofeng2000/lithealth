@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lit.health_mobile.dao.SetMealDao">
+    <!--根据套餐id查询关联信息，实现多对多查询信息-->
+<!--    定义resultMap查询字段-->
+    <resultMap id="baseResultMap" type="com.lit.health_mobile.pojo.Setmeal">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="help_code" property="helpCode"/>
+        <result column="sex" property="sex"/>
+        <result column="age" property="age"/>
+        <result column="price" property="price"/>
+        <result column="remark" property="remark"/>
+        <result column="attention" property="attention"/>
+        <result column="img" property="img"/>
+    </resultMap>
+    <resultMap id="findByIdResultMap" type="com.lit.health_mobile.pojo.Setmeal" extends="baseResultMap">
+        <!--多对多映射-->
+        <collection
+                property="checkGroups"
+                ofType="com.lit.health_mobile.pojo.CheckGroup"
+        select="com.lit.health_mobile.dao.CheckGroupDao.findCheckGroupById"
+        column="id">
+        </collection>
+    </resultMap>
+    <select id="findById" parameterType="int" resultMap="findByIdResultMap">
+        select * from t_setmeal where id=#{id};
+    </select>
+</mapper>
